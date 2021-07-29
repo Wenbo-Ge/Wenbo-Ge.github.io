@@ -1,158 +1,200 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-<title>Wenbo-Ge</title>
-<!-- for-mobile-apps -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Profile Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<!-- //for-mobile-apps -->
-<link href='http://fonts.googleapis.com/css?family=Poppins:400,600,500,700' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<script src="js/jquery-1.11.1.min.js"></script>
-<!-- //js -->
-<!-- Using Jquery -->
-    <script>
-    jQuery(document).ready(function($) {
-        $('#sidebar-btn').click(function() {
-            $('#sidebar').toggleClass('visible');
-        });
-    });
-    </script>
-<!--circlechart-->
-<script src="js/jquery.circlechart.js"></script>
-<!--circlechart-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wenbo Ge Portfolio</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <link rel="stylesheet" href="css/home_page.css">
 
 </head>
+
 <body>
-<div class="content">
-	<h1>Profile</h1>
-		<div class="main">
-		<div class="header">
-		<div class="hd-img">
-			<img src="images/2.jpg" alt=" " class="img-responsive" />
-			</div>
+  <!-- your content here... -->
 
-			<h2>Wenbo Ge</h2>
-			<p class="photo">Web Developer</p>
-			<div class="skill-info">
-				<ul>
-					<a href="http://18.188.206.218/project-demo/"><li><i class="fas fa-mobile-alt"></i><span>Self-driven project NO.1</span></li></a>
-					<a href="http://18.188.206.218/rating-website/"><li><i class="fas fa-desktop"></i><span>Self-driven project NO.2</span></li></a>
 
-				</ul>
-				<script>
-					$('.demo-1').percentcircle({
-						animate : true,
-						fillColor: 'rgb(119, 161, 173)'
-					});
-						$('.demo-2').percentcircle({
-						animate : true,
-						fillColor: 'rgb(0, 197, 255)'
-					});
-						$('.demo-3').percentcircle({
-						animate : true,
-						fillColor: 'rgb(119, 221, 255)'
-					});
-				</script>
-			</div>
-		</div>
-		<section class="slider">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<div class="header-bottom_3">
-							<div class="jan">
-								<h3>OBJECTIVE</h3>
-							</div>
-							<div class="jan-bottom">
-								<div class="jan-bottom-grid">
+  <div class="main_body">
+    <section id="name_section" class="row">
+      <div class="col-lg-4 my_name">
+        <h2>Wenbo Ge</h2>
+        <p>Data Analyst</p>
+        <p>Web Developer</p>
+      </div>
+      <div class="col-lg-8 my_area">
+        <ul>
+          <li class="col-lg-6 col-sm-6">
+            <p><i class="fab fa-chrome"></i></p>
+            <p>Website Development</p>
+          </li>
+          <li class="col-lg-6 col-sm-6">
+            <p><i class="fab fa-r-project"></i></p>
+            <p>Data Mining/Analysis</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-									<div class="jan-bottom-grid-left1">
-										<p>Proficient in building MVC web application with responsive front-end template using HTML5/CSS3/JS (Bootstrap4, jQuery) and extensible back-end by PHP (Composer/Twig) and SQL (MySQL/MSSQL) database</p>
-									</div>
+    <section id="intro_section" class="row">
+      <div class="col-lg-4 headshot">
+        <img src="./images/home_page/headshot.jpg" alt="head shot">
+      </div>
+      <div class="col-lg-8 personal_intro">
+        <h3 style="text-align: center">a bit about me:  <span class="text_content"></span><span class="text_cursor">|</span></h3>
+        <ul class="row">
+          <li class="col-lg-4 col-md-4 col-sm-4"><a href="#skills_section" class="anchor_link"><div><span>My Skills</span></div></a></li>
+          <li class="col-lg-4 col-md-4 col-sm-4"><a href="#experience_section" class="anchor_link"><div><span>My Experience</span></div></a></li>
+          <li class="col-lg-4 col-md-4 col-sm-4"><a href="#demos_section" class="anchor_link"><div><span>Demos & Projects</span></div></a></li>
+        </ul>
+        <br>
+        <p class="self_quote" style="text-align: center">Core Skills: R, SQL, Java, PHP, JavaScript, HTML/CSS.</p>
+      </div>
+    </section>
 
-									<div class="clear"></div>
-								</div>
-								<div class="jan-bottom-grid">
+    <section id="skills_section" class="row">
+      <div class="web_skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Able to write R/SQL codes to subset dataset and analyze data</li>
+          <li>Ability to write Java program codes with Object-Oriented methods to satisfy client’s requirements</li>
+          <li>Able to code build web pages</li>
+          <li>Ability to maintain and utilize program codes to avoid redundant and hard-code</li>
+          <li>Trustworthy and reliable with the ability to work independently and in a collaborative team</li>
+        </ul>
+      </div>
+    </section>
+    <section id="experience_section" class="row">
+      <div class="my_experience">
+        <h2>My Education</h2>
+        <h3><span>Computer Programmer Diploma, Algonquin College, Ottawa ON</span> <span class="date_period"> Sept 2019 – Present</span></h3>
+        <ul>
+          <li>Dean’s Honours List</li>
+          <li>Core Courses: Object-Oriented-Programming (Java), SQL Database, Operating Systems (Ubuntu), Web Programming, Communication, Technical Writing</li>
+        </ul>
+        <h3><span>Master of Business Economics, Brock University, St. Catharines ON</span> <span class="date_period"> Sept 2015 - Oct 2016</span></h3>
+        <ul>
+          <li>Scholarship: International Fellowship Scholarship, 2015, Graduate Fellowship Scholarship, 2015</li>
+          <li>Core Courses: Statistics, Macroeconomics, Microeconomics</li>
+        </ul>
 
-									<div class="jan-bottom-grid-left1">
-										<p>Develop industry-level web application with popular CMS framework - WordPress, project experience on building single page application with Restful API and Angular using 3rd party APIs</p>
-									</div>
+        <h2>Data Mining/Analysis Experience</h2>
+        <h3><span>Student Employment, CIHR, Ottawa</span> <span class="date_period">Sep 2020-Aug 2021</span></h3>
+        <ul>
+          <li>Updated 15+ SQL scripts to pull requested datasets for data analysts with good accuracy and quality</li>
+          <li>Collaborated with supervisor and Database Admin to validate functions, procedures, views and package
+            bodies after database server and environment changed</li>
+          <li>Refactored 5+ SQL scripts which made the code more readable and increased query speed</li>
+          <li>Coded 10+ R scripts to subset data based on requests from internal CIHR and external requesters</li>
+          <li>Visualized (histograms, plots) 5+ data subsets by using R libraries (tidyverse, ggplot2)</li>
+        </ul>
 
-									<div class="clear"></div>
-								</div>
-								<div class="jan-bottom-grid">
+        <h2>Web Development Experience</h2>
+        <h3><span>Web Developer, Giatec Scientific Inc., Ottawa</span> <span class="date_period">Jul 2018-Mar 2019</span></h3>
+        <ul>
+          <li>Developed new pages to demonstrate company’s products with Wordpress framework</li>
+          <li>Customized Wordpress theme, built custom fields and templates to fulfill marketing’s needs</li>
+          <li>Coded media query to fit pages on mobile screen size, tablet screen size and desktop screen size</li>
+          <li>Performed page tests and fixed display and functional bugs before deployment</li>
+          <li>Bitbucket was used to control versions of the codes and performed code reviews</li>
+          <li>Deployed new pages and tweaks from test site to live site by using command line and git commands</li>
+          <li>Maintained website by using SEMrush to implement better SEO strategy</li>
+          <li>Assisted Marketing to build landing pages through Hubspot and customized Hubspot form by using APIs</li>
+          <li>Assisted Sales to build ‘crawler’ to get contacts from social media</li>
+        </ul>
 
-									<div class="jan-bottom-grid-left1">
-										<p>Extensive experience in working with Developing environment (MAMP/Vagrant box) and AWS, version control tools (Git command, SourceTree), web testing tools (Postman, Google Dev Tool)</p>
-									</div>
+      </div>
+    </section>
 
-									<div class="clear"></div>
-								</div>
+    <section id="demos_section">
+      <h2>My Website Demos & Projects</h2>
+      <div class="my_work row">
+        <h3>Company Pages Demos</h3>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo0.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/demo-0.png">
+            <div class="overlay">
+              <h3 class="project-title">Company's Home Page</h3>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo1.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/demo-1.png">
+            <div class="overlay">
+              <h3 class="project-title">Company's Product Main Page</h3>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo2.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/demo-2.png">
+            <div class="overlay">
+              <h3 class="project-title">Company's Product Page</h3>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo3.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/demo-3-v1.png">
+            <div class="overlay">
+              <h3 class="project-title">Company's Career Page</h3>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo4.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/demo-4.png">
+            <div class="overlay">
+              <h3 class="project-title">Company's Knowledge Base Page</h3>
+            </div>
+          </div>
+        </a>
 
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="header-bottom_3">
-							<div class="jan">
-								<h3>WORK EXPERIENCE</h3>
-							</div>
-							<div class="jan-bottom">
-								<div class="jan-bottom-grid">
 
-									<div class="jan-bottom-grid-left1">
-										<p>Analyzed & conducted requirements for new business modules and transformed them into technical models</p>
-									</div>
 
-									<div class="clear"></div>
-								</div>
 
-								<div class="jan-bottom-grid">
+      </div>
+      <div class="my_work row">
+        <h3>Self-driven Projects</h3>
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo4.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/project_0.png">
+            <div class="overlay">
+              <h3 class="project-title">Barca Fans Page</h3>
+            </div>
+          </div>
+        </a>
+        
+        <a data-fancybox data-type="image" data-src="./images/home_page/demo4.png" href="javascript:;" rel="noopener noreferrer nofollow">
+          <div class="col-lg-4 col-md-6 col-xs-6 div_wrap">
+            <img src="./images/home_page/project_1.png">
+            <div class="overlay">
+              <h3 class="project-title">Movie Rating Page</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
-									<div class="jan-bottom-grid-left1">
-										<p>Implemented multiple interactive wordpress page templates utilizing Bootstrap 4 and CSS3 animation</p>
-									</div>
 
-									<div class="clear"></div>
-								</div>
-								<div class="jan-bottom-grid">
+  </div>
 
-									<div class="jan-bottom-grid-left1">
-										<p>Maintained company’s main site routinely and took responsible for new release deployment</p>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-										<p>Code review for team members in agile environment and merged new features to current version</p>
-									</div>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-									<div class="clear"></div>
-								</div>
+  <!-- fancy box -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/home_page.js"></script>
 
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-						<!--FlexSlider-->
-								<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-								<script defer src="js/jquery.flexslider.js"></script>
-								<script type="text/javascript">
-								$(window).load(function(){
-								  $('.flexslider').flexslider({
-									animation: "slide",
-									start: function(slider){
-									  $('body').removeClass('loading');
-									}
-								  });
-								});
-							  </script>
-						<!--End-slider-script-->
-	</div>
-	<p class="footer">Tel: 519-636-8709 | Email: <a href="https://www.google.com/gmail/">wenbo.ge.ca@gmail.com</a> | Github: <a href="https://github.com/Wenbo-Ge">https://github.com/Wenbo-Ge</a></p>
-</div>
 
 </body>
 </html>
