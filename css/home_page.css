@@ -84,6 +84,8 @@ body {
   color: white;
   font-weight: 100;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  max-width: 1100px;
 }
 @keyframes blink {
   0% {
@@ -187,8 +189,8 @@ body {
   margin-bottom: 20px;
 }
 .main_body #demos_section .my_work img {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+  max-width: 100%;
 }
 .main_body #demos_section .my_work div .overlay {
   position: absolute;
